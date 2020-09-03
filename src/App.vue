@@ -1,19 +1,23 @@
 <template>
   <div id="app">
     <router-view/>
+    <todoList message="copyright by Thieu"/>
   </div>
 </template>
 
 <script>
-
+import todoList from '@/components/todoList.vue'
 export default {
   name: 'App',
   data () {
     return {
-      title: 'Welcome to Your Vue.js App'
+      title: 'Welcome to Your Vue.js App',
+
     }
+  },
+  components: {
+    todoList
   }
-  
 }
 </script>
 
